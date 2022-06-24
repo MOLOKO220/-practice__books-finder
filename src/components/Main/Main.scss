@@ -1,0 +1,86 @@
+.Main {
+  width: 100%;
+  margin: auto;
+  > header {
+    height: 200px;
+    width: 100%;
+    background: url("./img/back.jpg") no-repeat;
+    filter: saturate(50%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    > h1 {
+      font-size: 35px;
+      font-weight: 700;
+      color: white;
+      text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+    }
+    .header__name-search {
+      width: 350px;
+      height: 35px;
+      position: relative;
+      > input {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        padding: 2px 35px 2px 5px;
+      }
+      > img {
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        height: 30px;
+        width: 30px;
+        cursor: text;
+      }
+    }
+    .header__categories {
+      width: 100vw;
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        margin-right: 5px;
+        text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+      }
+      select {
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+      }
+    }
+  }
+  main {
+    min-height: 450px;
+    > h4 {
+      height: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+    }
+    > div {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .more-btn {
+    margin: auto;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 225, 0);
+    border-radius: 10px;
+  }
+}
